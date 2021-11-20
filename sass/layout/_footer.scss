@@ -1,0 +1,31 @@
+.address {
+    font-style: normal;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    letter-spacing: 0.03em;
+    align-items: center;
+    background-color: var(--second-accent-color);
+  }
+  .footer-info {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-address {
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  
+  
+  .footer {
+    display: block;
+    margin-bottom: 9px;
+
+    &:last-child {
+    margin-bottom: 0px;
+  }
+  }
+  
+ 
+  
