@@ -20,19 +20,19 @@
 </head>
 <body>
     <!---------------------------------------------Блок 1 Шапка ----------------------------------------------------->
-    <header class="header"> 
+     <header class="header"> 
          <div class="container header-container">
-     <nav class="header-nav active">
-        <a class="link body-logo-head" href="" lang="en"><span>Web</span><span class="third-body-logo">Studio</span></a>
+            <nav class="header-nav active">
+              <a class="link body-logo-head" href="" lang="en"><span>Web</span><span class="third-body-logo">Studio</span></a>
         
                 <ul class="list menu-list">
                     <li class="menu-list__map"><a class="menu-list__source link current" href="./index.html">Студия</a></li>
                     <li class="menu-list__map"><a class="menu-list__source link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu-list__map"><a class="menu-list__source link" href="#address">Контакты</a></li>
                     </ul>
-     </nav>
-     <!--========================= START Mobile-menu==================== -->
-             <button class="burger-btn">
+                   </nav>
+     <!-- <--========================= START Mobile-menu==================== --> 
+             <button class="burger-btn" data-menu-open="">
                  <svg class="burger-btn__icon" width="40px" height="40px">
                    <use href="./img/page-3/icon/sprite.svg#icon-burger">
                        
@@ -40,17 +40,46 @@
                  </svg>
              </button>
 
-            <div class="mobile-menu">
-                <button class="mobile-menu__close--btn">
-                    <svg class="mobile-menu__close-icon" width="18px" height="18px">
+            <div class="mobile-menu" data-menu="">
+                <button class="mobile-menu__close" data-menu-close="">
+                    <svg class="mobile-menu__complete" width="18px" height="18px">
                         <use href="./img/page-3/icon/sprite.svg#icon-close">
                 
                         </use>
                     </svg>
                 </button>
-            </div>
+                <div class="mobile-menu__menu list">
+                    <ul class="list mobile-menu__list">
+                        <li class="mobile-menu__text"><a class="mobile-menu__anchor link current" href="">Студия</a></li>
+                        <li class="mobile-menu__text"><a class="mobile-menu__anchor link" href="">Портфолио</a></li>
+                        <li class="mobile-menu__text"><a class="mobile-menu__anchor link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__contacts">
+                    <ul class="list mobile-menu__list">
+                        <li class="mobile-menu__scroll" aria-label="Позвонить">
+                            <a class="mobile-menu__phone link" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mobile-menu__scroll" aria-label="Написать">
+                            <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__network">
+                    <ul class="list mobile-menu__catalog">
+                        <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">Instagram</a></li>
+                        <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">Twitter</a></li>
+                        <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">Facebook</a></li>
+                        <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div> 
             <!--========================= AND Mobile-menu==================== -->
-             <ul class="menu-list list header-connect">
+              <ul class="menu-list list header-connect">
 
                     <li class="menu-list__map" aria-label="Написать">
                         <a class="menu-list__сonnection link" href="mailto:info@devstudio.com">
@@ -75,16 +104,16 @@
              </ul>
             
         
-        </div> 
+        </div>  
 
-   </header>
+   </header> 
     <!------------------------------------------Герой---------------------------------------------------------->
     <main>
-<!--            
-             <section class="main-section overlay">
+            
+             <section class="main-section hero">
                 
 
-                 <div class="container">
+                 <div class="container hero__text">
                     <h1 class="main-slogan hero-after-title">Эффективные решения для вашего бизнеса</h1> 
                     <button data-modal-open class="button primary" type="button">Заказать услугу</button>
                 </div>
@@ -98,7 +127,7 @@
                             </svg>
                         </button>
                     
-                        <div class="backdrop-form">
+                        <!-- <div class="backdrop-form">
                                 <form class="modal-form">
                                    <p class="form-text-hero">Оставьте свои данные, мы вам перезвоним</p>
                                         
@@ -154,12 +183,12 @@
                                 </form>
                             </div>
                     </div>
-                </div>
+                </div> --> 
 
             </section>
             
-            Блок 3 приемущества -->
-           
+            <!-- Блок 3 приемущества -->
+            
                 <!-- <section class="about">
 
                     <div class="container">
@@ -546,6 +575,6 @@
     <!-- </footer> -->
 
     <!-- <script src="./js/modal.js"></script> -->
-
+      <script src="./js/menu.js"></script>
 </body>
 </html>
