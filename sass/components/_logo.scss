@@ -8,11 +8,18 @@ $accent-color: var(--accent-color);
 
 .body-logo-head {
   font-family: "Raleway", sans-serif;
-  margin-right: 90px;
+
   @include font(700, 26px, 1.19);
   letter-spacing: 0.03em;
   display: inline-block;
   color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .body-logo-footer {

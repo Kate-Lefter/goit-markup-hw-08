@@ -90,13 +90,24 @@ img {
 
 .body-logo-head {
   font-family: "Raleway", sans-serif;
-  margin-right: 90px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: inline-block;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .body-logo-head {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .body-logo-head {
+    margin-right: 93px;
+  }
 }
 
 .body-logo-footer {
