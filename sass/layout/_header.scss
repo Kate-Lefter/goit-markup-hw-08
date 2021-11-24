@@ -7,9 +7,14 @@
   padding-bottom: 10px;
   background-color: var(--header-color);
 
+  @media screen and (min-width: 480px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 21px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
@@ -163,11 +168,15 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
+    margin-top: 21px;
     margin-left: auto;
+    margin-bottom: 20px;
   }
 }
 .header-container__connection {
+  margin-right: 50px;
   @media screen and (min-width: 768px) {
+    margin-right: 0;
     margin-bottom: 10px;
   }
 }
@@ -175,10 +184,11 @@
 .menu-list__map:not(:last-child) {
   margin-right: 50px;
 }
+// =======================================================================
 .menu-list__source {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -220,6 +230,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 12px, 1.17);
   }
 }
 .menu-list__badge {
