@@ -91,8 +91,8 @@ img {
 .body-logo-head {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   display: inline-block;
   color: var(--accent-color);
@@ -107,6 +107,12 @@ img {
 @media screen and (min-width: 1200px) {
   .body-logo-head {
     margin-right: 93px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    color: var(--accent-color);
   }
 }
 
@@ -127,9 +133,17 @@ img {
 }
 
 .third-body-logo {
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--logo-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .third-body-logo {
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logo-color);
+  }
 }
 
 .addres-logo {
@@ -545,13 +559,12 @@ img {
 }
 
 .header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--header-color);
 }
 
@@ -572,14 +585,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .header-container {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 .burger-btn {
@@ -694,8 +699,12 @@ img {
   display: flex;
 }
 
-.mobile-menu__cards:not(:last-child) {
-  margin-right: 20px;
+.mobile-menu__cards:not(:last-child)::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .mobile-menu__sites {
@@ -730,6 +739,23 @@ img {
 @media screen and (max-width: 767px) {
   .menu-list {
     display: none;
+  }
+}
+
+.header-container__menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container__menu {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container__connection {
+    margin-bottom: 10px;
   }
 }
 
@@ -796,6 +822,9 @@ img {
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  background-color: var(--second-accent-color);
+  border-bottom: 1px solid #ececec;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img/hero/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -812,8 +841,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img/hero/hero-tablet.jpg");
     max-width: 768px;
     height: 400px;
@@ -840,14 +869,6 @@ img {
   .hero {
     background-image: url("../img/img/hero/hero-desktop2x.jpg");
   }
-}
-
-.main-section {
-  width: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-color: var(--second-accent-color);
 }
 
 .main-slogan {

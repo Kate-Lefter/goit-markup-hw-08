@@ -8,8 +8,7 @@ $accent-color: var(--accent-color);
 
 .body-logo-head {
   font-family: "Raleway", sans-serif;
-
-  @include font(700, 26px, 1.19);
+  @include font(700, 24px, 1.17);
   letter-spacing: 0.03em;
   display: inline-block;
   color: $accent-color;
@@ -19,6 +18,10 @@ $accent-color: var(--accent-color);
   }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    @include font(700, 26px, 1.19);
+    letter-spacing: 0.03em;
+    display: inline-block;
+    color: $accent-color;
   }
 }
 
@@ -38,8 +41,13 @@ $accent-color: var(--accent-color);
   color: var(--second-logo-color);
 }
 .third-body-logo {
-  @include font(26px, 1.19);
+  @include font(24px, 1.17);
   color: var(--logo-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 1.19);
+    color: var(--logo-color);
+  }
 }
 .addres-logo {
   margin-bottom: 20px;

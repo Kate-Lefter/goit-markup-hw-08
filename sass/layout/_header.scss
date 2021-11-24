@@ -1,11 +1,10 @@
 .header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--header-color);
 
   @media screen and (min-width: 768px) {
@@ -21,12 +20,6 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  @media screen and (min-width: 768px) {
-    margin: 0;
-    padding: 0;
-  }
 }
 .burger-btn {
   display: block;
@@ -128,9 +121,15 @@
 .mobile-menu__catalog {
   display: flex;
 }
-.mobile-menu__cards:not(:last-child) {
-  margin-right: 20px;
+
+.mobile-menu__cards:not(:last-child)::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
 .mobile-menu__sites {
   font-weight: 500;
   font-size: 18px;
@@ -158,6 +157,18 @@
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+}
+.header-container__menu {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+}
+.header-container__connection {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
   }
 }
 
