@@ -9,8 +9,8 @@
   background-color: var(--header-color);
 
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
@@ -22,6 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 .burger-btn {
   display: block;
@@ -155,6 +160,7 @@
     display: none;
   }
 }
+
 .menu-list__map:not(:last-child) {
   margin-right: 50px;
 }
