@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -189,8 +189,8 @@
             </section>
             
             <!-- Блок 3 приемущества -->
-            
-                <!-- <section class="about">
+             
+                <section class="about">
 
                     <div class="container">
                         <h2 class="visually-hidden">Наши приемущества</h2>
@@ -220,11 +220,11 @@
                         </ul>
                     
                         </div>
-                 </section> -->
+                 </section> 
             
             <!--Блок 4 Направление-->
             
-             <!-- <section class="aside-can">
+              <section class="aside-can">
                 <div class="container">
                     <h2 class="aside-us">Чем мы занимаемся</h2>
                     <ul class="list item-us">
@@ -254,18 +254,57 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> 
 
-        Блок 5 Сотрудники-->
+        <!---Блок 5 Сотрудники-->
            
-                <!-- <section class="aside-team">
+                <section class="aside-team">
                     <div class="container">
 
                         <h2 class="aside-us">Наша команда</h2>
                         <ul class="list item-us">
                             <li class="item item-substrate">
-                                <img class="aside-img" src="./img/page-1/img-3.jpg" width="270" height="260" alt="employees-1">
+                                <picture>
+
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-1-desktop.webp,
+                                            ./img/img/team/team-1-desktop@2x.webp " 
+                                    type="image/webp">
+
+
+
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./img/img/team/team-1-desktop.jpg,
+                                            ./img/img/team/team-1-desktop@2x.jpg">
+
+
+
+                                    <source media="(min-width: 768px)" 
+                                     srcset="./img/img/team/team-1-tablet.webp,
+                                             ./img/img/team/team-1-tablet@2x.webp " 
+                                    type="image/webp">
+                                   
+
+                                    <source media="(min-width: 768px)" 
+                                     srcset="./img/img/team/team-1-tablet.jpg
+                                             ./img/img/team/team-1-tablet@2x.jpg ">
+
+
+                                        
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-1.webp,
+                                            ./img/img/team/team-1@2x.webp " 
+                                    type="image/webp">
+
+
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-1.jpg,
+                                            ./img/img/team/team-1@2x.jpg ">
+                                <img class="aside-img" src="#" alt="employees-1" 
+                                loading="lazy">
                                 
+                                </picture>
+                            
                                 <div class="item-pro-name">
                                 <h3 class="item-name">Игорь Демьяненко</h3>
                                 <p class="content-team">Product Designer</p>
@@ -307,7 +346,48 @@
                                 </div>
                             </li>
                             <li class="item item-substrate">
-                                <img class="aside-img" src="./img/page-1/img-2.jpg" width="270" height="260" alt="employees-2">
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-2-desktop.webp,
+                                            ./img/img/team/team-2-desktop@2x.webp "
+                                    type="image/webp">
+                                
+                                
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-2-desktop.jpg,
+                                            ./img/img/team/team-2-desktop@2x.jpg">
+                                
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/team/team-2-tablet.webp,
+                                            ./img/img/team/team-2-tablet@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/team/team-2-tablet.jpg
+                                            ./img/img/team/team-2-tablet@2x.jpg ">
+                                
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-2.webp,
+                                            ./img/img/team/team-2@2x.webp "
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-2.jpg,
+                                            ./img/img/team/team-2@2x.jpg ">
+                                    <img class="aside-img" 
+                                    src="#" 
+                                    alt="employees-2" 
+                                    loading="lazy">
+                                
+                                </picture>
                                
                                 <div class="item-pro-name">
                                 <h3 class="item-name">Ольга Репина</h3>
@@ -349,7 +429,49 @@
                                 </div>
                             </li>
                             <li class="item item-substrate">
-                                <img class="aside-img" src="./img/page-1/img-1.jpg" width="270" height="260" alt="employees-3">
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-3-desktop.webp,
+                                            ./img/img/team/team-3-desktop@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-3-desktop.jpg,
+                                            ./img/img/team/team-3-desktop@2x.jpg">
+                                
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/team/team-3-tablet.webp,
+                                            ./img/img/team/team-3-tablet@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/team/team-3-tablet.jpg
+                                            ./img/img/team/team-3-tablet@2x.jpg ">
+                                
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-3.webp,
+                                            ./img/img/team/team-3@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-3.jpg,
+                                            ./img/img/team/team-3@2x.jpg ">
+                                    <img class="aside-img" 
+                                    src="#" 
+                                    alt="employees-3" 
+                                    loading="lazy">
+                                
+                                </picture>
+                                
                                 
                                 <div class="item-pro-name">
                                 <h3 class="item-name">Николай Тарасов</h3>
@@ -391,7 +513,48 @@
                                 </div>
                             </li>
                             <li class="item item-substrate">
-                                <img class="aside-img" src="./img/page-1/img.jpg" width="270" height="260" alt="employees-4">
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-4-desktop.webp,
+                                            ./img/img/team/team-4-desktop@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/team/team-4-desktop.jpg,
+                                            ./img/img/team/team-4-desktop@2x.jpg">
+                                
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/team/team-4-tablet.webp,
+                                            ./img/img/team/team-4-tablet@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/team/team-4-tablet.jpg
+                                            ./img/img/team/team-4-tablet@2x.jpg ">
+                                
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-4.webp,
+                                            ./img/img/team/team-4@2x.webp " 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/team/team-4.jpg,
+                                            ./img/img/team/team-4@2x.jpg ">
+                                    <img class="aside-img" 
+                                    src="#" 
+                                    alt="employees-4"
+                                    loading="lazy">
+                                
+                                </picture>
                                
                                 <div class="item-pro-name">
                                 <h3 class="item-name">Михаил Ермаков</h3>
@@ -434,7 +597,7 @@
                             </li>
                         </ul>
                     </div>
-             </section> -->
+             </section>
 
              <!-- <section class="our-clients">
                   <div class="container">

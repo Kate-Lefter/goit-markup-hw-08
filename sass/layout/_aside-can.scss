@@ -1,51 +1,55 @@
 .aside-can {
-    text-align: center;
-    padding-bottom: 94px;
-  }
-  
-  .icon-antenna::before {
-    background-image: url(../img/page-3/icon/antenna.svg);
-  }
-  .icon-clock::before {
-    background-image: url(../img/page-3/icon/clock.svg);
-  }
-  .icon-diagram::before {
-    background-image: url(../img/page-3/icon/diagram.svg);
-  }
-  .icon-astronaut::before {
-    background-image: url(../img/page-3/icon/astronaut.svg);
-  }
-  
-  .item-us {
-    display: flex;
-    text-align: center;
-  }
-  
-  .item-can {
-    width: 370px;
+  text-align: center;
+  padding-bottom: 94px;
 
-    &:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.icon-antenna::before {
+  background-image: url(../img/page-3/icon/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../img/page-3/icon/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../img/page-3/icon/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../img/page-3/icon/astronaut.svg);
+}
+
+.item-us {
+  display: flex;
+  text-align: center;
+}
+
+.item-can {
+  width: 370px;
+
+  &:not(:last-child) {
     margin-right: 30px;
   }
-  }
-  .features-icon {
-    display: flex;
-    position: relative;
-    justify-content: center;
-  }
-  .features-icon-head {
-    position: absolute;
-    width: 370px;
-    height: 70px;
-    bottom: 0;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  .features-icon-text {
-    padding-top: 27px;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+}
+.features-icon {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.features-icon-head {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.features-icon-text {
+  padding-top: 27px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

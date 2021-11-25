@@ -955,16 +955,42 @@ img {
   padding-bottom: 94px;
 }
 
-.about-item {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .about-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-item {
+    display: flex;
+  }
 }
 
 .about-pro-item {
-  width: 270px;
+  width: 450px;
 }
 
-.about-pro-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .about-pro-item {
+    width: 50%;
+  }
+  .about-pro-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-pro-item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-pro-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-pro-item::before {
@@ -981,6 +1007,7 @@ img {
 
 .about-title {
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -997,9 +1024,21 @@ img {
   color: var(--second-text-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .about-text {
+    margin-bottom: 30px;
+  }
+}
+
 .aside-can {
   text-align: center;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .aside-can {
+    display: none;
+  }
 }
 
 .icon-antenna::before {
