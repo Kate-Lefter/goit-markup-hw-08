@@ -1,4 +1,9 @@
 .distribution-form {
-    margin-left: auto;
-    display: flex;
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}

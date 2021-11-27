@@ -11,7 +11,7 @@
   }
 }
 .our-clients__us {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -20,7 +20,7 @@
   height: 92px;
   @media screen and (min-width: 480px) {
     width: 210px;
-    flex-basis: calc(100% / 2 * 30px);
+    width: calc(100% / 2 * 30px);
     margin: 15px;
   }
 
