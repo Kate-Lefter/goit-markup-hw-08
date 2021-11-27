@@ -347,12 +347,19 @@ img {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -376,10 +383,16 @@ img {
 }
 
 .modal-form {
-  width: 528px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+  }
 }
 
 .form-hero {
@@ -389,6 +402,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   text-align: left;
+  margin-bottom: 10px;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -478,10 +492,19 @@ img {
 .form-hero-checbox label {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-hero-checbox label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form-hero-link {
@@ -529,6 +552,12 @@ img {
 @media screen and (max-width: 1199px) {
   .input-footer {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-footer {
+    width: 358px;
   }
 }
 
@@ -1036,6 +1065,12 @@ img {
   color: var(--primary-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .about-title {
+    text-align: left;
+  }
+}
+
 .about-text {
   font-weight: 400;
   font-size: 14px;
@@ -1413,6 +1448,13 @@ img {
   align-items: baseline;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer-info {
     display: flex;
@@ -1423,10 +1465,9 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .footer-info {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
   }
 }
 
