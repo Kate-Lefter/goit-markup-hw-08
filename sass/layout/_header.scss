@@ -156,10 +156,10 @@
 }
 .header-container__menu {
   display: none;
+
   @media screen and (max-width: 1199px) {
     display: block;
     margin-top: 21px;
-    margin-left: auto;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -168,7 +168,6 @@
   }
 }
 .header-container__connection {
-  margin-right: 50px;
   @media screen and (min-width: 768px) {
     margin-right: 0;
     margin-bottom: 10px;
@@ -230,6 +229,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
   @media screen and (min-width: 1200px) {
     @include font(500, 14px, 1.14);

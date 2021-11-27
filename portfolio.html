@@ -21,50 +21,98 @@
 
 <body>
     <!--------------------------------------------Блок 1 Шапка -------------------------------------------->
-    <header class="header">
-        <!-- <div class="container header-container">
-            <nav class="header-nav active">
-                <a class="link body-logo-head" href="" lang="en"><span>Web</span><span
-                        class="third-body-logo">Studio</span></a>
-    
-                <ul class="list menu-list">
-                    <li class="menu-list__map"><a class="menu-list__source link" href="./index.html">Студия</a></li>
-                    <li class="menu-list__map"><a class="menu-list__source link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="menu-list__map"><a class="menu-list__source link" href="#address">Контакты</a></li>
-                </ul>
-            </nav>
-    
-            <ul class="menu-list list header-connect">
-    
-                <li class="menu-list__map" aria-label="Написать">
-                    <a class="menu-list__сonnection link" href="mailto:info@devstudio.com">
-                        <svg class="menu-list__badge" width="16px" height="12px">
-                            <use href="./img/page-3/icon/sprite.svg#icon-envelope">
-    
-                            </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="menu-list__map" aria-label="Позвонить">
-                    <a class="menu-list__сonnection link" href="tel:+380961111111">
-                        <svg class="menu-list__badge" width="10px" height="16px">
-                            <use href="./img/page-3/icon/sprite.svg#icon-smartphone">
-    
-                            </use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
+<header class="header">
+    <div class="container header-container">
+        <nav class="header-nav active">
+            <a class="link body-logo-head" href="" lang="en"><span>Web</span><span
+                    class="third-body-logo">Studio</span></a>
+
+            <ul class="list menu-list">
+                <li class="menu-list__map"><a class="menu-list__source link " href="./index.html">Студия</a></li>
+                <li class="menu-list__map"><a class="menu-list__source link current" href="./portfolio.html">Портфолио</a></li>
+                <li class="menu-list__map"><a class="menu-list__source link" href="#address">Контакты</a></li>
             </ul>
-    
-    
-        </div> -->
-    
-    </header>
+        </nav>
+        <!-- <--========================= START Mobile-menu==================== -->
+        <button class="burger-btn" data-menu-open="">
+            <svg class="burger-btn__icon" width="40px" height="40px">
+                <use href="./img/page-3/icon/sprite.svg#icon-burger">
+
+                </use>
+            </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu="">
+            <button class="mobile-menu__close" data-menu-close="">
+                <svg class="mobile-menu__complete" width="18px" height="18px">
+                    <use href="./img/page-3/icon/sprite.svg#icon-close">
+
+                    </use>
+                </svg>
+            </button>
+            <div class="mobile-menu__menu list">
+                <ul class="list mobile-menu__list">
+                    <li class="mobile-menu__text"><a class="mobile-menu__anchor link " href="">Студия</a></li>
+                    <li class="mobile-menu__text"><a class="mobile-menu__anchor link " href="">Портфолио</a></li>
+                    <li class="mobile-menu__text"><a class="mobile-menu__anchor link" href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu__contacts">
+                <ul class="list mobile-menu__list">
+                    <li class="mobile-menu__scroll" aria-label="Позвонить">
+                        <a class="mobile-menu__phone link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-menu__scroll" aria-label="Написать">
+                        <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu__network">
+                <ul class="list mobile-menu__catalog">
+                    <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">Instagram</a></li>
+                    <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">Twitter</a></li>
+                    <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">Facebook</a></li>
+                    <li class="mobile-menu__cards"> <a class="mobile-menu__sites link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--========================= AND Mobile-menu==================== -->
+        <ul class="menu-list header-container__menu list">
+
+            <li class=" header-container__connection" aria-label="Написать">
+                <a class="menu-list__сonnection link" href="mailto:info@devstudio.com">
+                    <svg class="menu-list__badge" width="16px" height="12px">
+                        <use href="./img/page-3/icon/sprite.svg#icon-envelope">
+
+                        </use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="" aria-label="Позвонить">
+                <a class="menu-list__сonnection link" href="tel:+380961111111">
+                    <svg class="menu-list__badge" width="10px" height="16px">
+                        <use href="./img/page-3/icon/sprite.svg#icon-smartphone">
+
+                        </use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+
+
+
+    </div>
+
+</header>
     <!------------------------------------------Блок 2 тело-------------------------------------------------->
     <main>
-        <!-- <section class="container-hero">
+        <section class="container-hero">
         <div class="container">
         <ul class="container-hero__buttons list">
             <li class="container-hero__navigation"><button class="button secondary" type="button">Все</button></li>
@@ -80,7 +128,48 @@
                 <li  class="container-hero__flex--elements">
                             <a class="link container-hero__aside--box " href="">
                                <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img.jpg" width="370" height="294" alt="фото ноутбук ">
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/works/works-1-desktop.webp,
+                                           ./img/img/works/works-1-desktop@2x.webp "
+                                           type="image/webp">
+                                
+                                
+                                
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./img/img/works/works-1-desktop.jpg,
+                                             ./img/img/works/works-1-desktop@2x.jpg">
+                                
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/works/works-1-tablet.webp,
+                                            ./img/img/works/works-1-tablet@2x.webp "
+                                     type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/works/works-1-tablet.jpg,
+                                            ./img/img/works/works-1-tablet@2x.jpg ">
+                                
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/works/works-1.webp,
+                                            ./img/img/works/works-1@2x.webp" 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/works/works-1.jpg,
+                                            ./img/img/works/works-1@2x.jpg  ">
+                                    <img class=""
+                                     src="#" 
+                                     alt="фото ноутбук"
+                                      loading="lazy">
+                                
+                                </picture>
 
                                 <p class="category-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -95,7 +184,48 @@
                 <li class="container-hero__flex--elements">
                      <a class="link container-hero__aside--box " href="">
                             <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-1.jpg" width="370" height="294" alt="фото два баскетболиста играют ">
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./img/img/works/works-2-desktop.webp,
+                                             ./img/img/works/works-2-desktop@2x.webp "
+                                     type="image/webp">
+                                
+                                
+                                
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./img/img/works/works-2-desktop.jpg,
+                                             ./img/img/works/works-2-desktop@2x.jpg">
+                                
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/works/works-2-tablet.webp,
+                                         ./img/img/works/works-2-tablet@2x.webp "
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/works/works-2-tablet.jpg,
+                                      ./img/img/works/works-2-tablet@2x.jpg ">
+                                
+                                
+                                
+                                    <source media="(min-width: 270px)"
+                                     srcset="./img/img/works/works-2.webp,
+                                             ./img/img/works/works-2@2x.webp" 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 270px)"
+                                     srcset="./img/img/works/works-2.jpg,
+                                         ./img/img/works/works-2@2x.jpg  ">
+                                    <img class=""
+                                     src="#"
+                                      alt="фото два баскетболиста играют" 
+                                      loading="lazy">
+                                
+                                </picture>
                                 <p class="category-text">Постер New Orlean vs Golden Star это современная площадка распространения коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -112,7 +242,49 @@
                    
                             <a class="link container-hero__aside--box" href="">
                                 <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-2.jpg" width="370" height="294" alt="фото логотип с рыбой">
+                                    <picture>
+                                    
+                                        <source media="(min-width: 1200px)" 
+                                        srcset="./img/img/works/works-3-desktop.webp,
+                                              ./img/img/works/works-3-desktop@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 1200px)" 
+                                        srcset="./img/img/works/works-3-desktop.jpg,
+                                           ./img/img/works/works-3-desktop@2x.jpg">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-3-tablet.webp,
+                                            ./img/img/works/works-3-tablet@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-3-tablet.jpg,
+                                             ./img/img/works/works-3-tablet@2x.jpg ">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 270px)"
+                                         srcset="./img/img/works/works-3.webp,
+                                           ./img/img/works/works-3@2x.webp" 
+                                        type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 270px)"
+                                         srcset="./img/img/works/works-3.jpg,
+                                              ./img/img/works/works-3@2x.jpg  ">
+                                        <img class=""
+                                         src="#"
+                                          alt="фото логотип с рыбой"
+                                           loading="lazy">
+                                    
+                                    </picture>
+                        
                                 <p class="category-text">Ресторан Seafood это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -129,7 +301,49 @@
                     
                             <a class="link container-hero__aside--box" href="">
                             <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-3.jpg" width="370" height="294" alt="фото ноушники">
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)" 
+                                    srcset="./img/img/works/works-4-desktop.webp,
+                                         ./img/img/works/works-4-desktop@2x.webp "
+                                     type="image/webp">
+                                
+                                
+                                
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./img/img/works/works-4-desktop.jpg,
+                                         ./img/img/works/works-4-desktop@2x.jpg">
+                                
+                                
+                                
+                                    <source media="(min-width: 768px)"
+                                     srcset="./img/img/works/works-4-tablet.webp,
+                                         ./img/img/works/works-4-tablet@2x.webp "
+                                     type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 768px)" 
+                                    srcset="./img/img/works/works-4-tablet.jpg,
+                                         ./img/img/works/works-4-tablet@2x.jpg ">
+                                
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/works/works-4.webp,
+                                          ./img/img/works/works-4@2x.webp" 
+                                    type="image/webp">
+                                
+                                
+                                    <source media="(min-width: 270px)" 
+                                    srcset="./img/img/works/works-4.jpg,
+                                         ./img/img/works/works-4@2x.jpg  ">
+                                    <img class="" 
+                                    src="#" 
+                                    alt="фото ноушники" 
+                                    loading="lazy">
+                                
+                                </picture>
+                               
                                 <p class="category-text">Проект Prime это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -146,7 +360,49 @@
                     
                             <a class="link container-hero__aside--box" href="">
                                 <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-4.jpg" width="370" height="294" alt="фото две коробки">
+                                    <picture>
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-5-desktop.webp,
+                                              ./img/img/works/works-5-desktop@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-5-desktop.jpg,
+                                                 ./img/img/works/works-5-desktop@2x.jpg">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 768px)"
+                                        srcset="./img/img/works/works-5-tablet.webp,
+                                              ./img/img/works/works-5-tablet@2x.webp " 
+                                        type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 768px)"
+                                         srcset="./img/img/works/works-5-tablet.jpg,
+                                               ./img/img/works/works-5-tablet@2x.jpg ">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-5.webp,
+                                              ./img/img/works/works-5@2x.webp" 
+                                        type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-5.jpg,
+                                          ./img/img/works/works-5@2x.jpg  ">
+                                        <img class=""
+                                         src="#"
+                                        alt="фото две коробки" 
+                                        loading="lazy">
+                                    
+                                    </picture>
+                                
                                 <p class="category-text">Проект Boxes это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -164,7 +420,49 @@
                    
                             <a class="link container-hero__aside--box" href="">
                                 <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-5.jpg" width="370" height="294" alt="фото экран компьютера">
+                                    <picture>
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-6-desktop.webp,
+                                             ./img/img/works/works-6-desktop@2x.webp " 
+                                        type="image/webp">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-6-desktop.jpg,
+                                              ./img/img/works/works-6-desktop@2x.jpg">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-6-tablet.webp,
+                                              ./img/img/works/works-6-tablet@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-6-tablet.jpg,
+                                              ./img/img/works/works-6-tablet@2x.jpg ">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 270px)"
+                                         srcset="./img/img/works/works-6.webp,
+                                               ./img/img/works/works-6@2x.webp" 
+                                        type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-6.jpg,
+                                              ./img/img/works/works-6@2x.jpg  ">
+                                        <img class=""
+                                         src="#"
+                                        alt="фото экран компьютера" 
+                                        loading="lazy">
+                                    
+                                    </picture>
+                                
                                 <p class="category-text">Inspiration has no Borders это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -181,7 +479,49 @@
                     
                             <a class="link container-hero__aside--box" href="">
                                 <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-6.jpg" width="370" height="294" alt="фото книга">
+                                    <picture>
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-7-desktop.webp,
+                                                 ./img/img/works/works-7-desktop@2x.webp " 
+                                        type="image/webp">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-7-desktop.jpg,
+                                              ./img/img/works/works-7-desktop@2x.jpg">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-7-tablet.webp,
+                                          ./img/img/works/works-7-tablet@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-7-tablet.jpg,
+                                           ./img/img/works/works-7-tablet@2x.jpg ">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-7.webp,
+                                              ./img/img/works/works-7@2x.webp"
+                                         type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-7.jpg,
+                                          ./img/img/works/works-7@2x.jpg  ">
+                                        <img class=""
+                                         src="#"
+                                          alt="фото книга" 
+                                          loading="lazy">
+                                    
+                                    </picture>
+                                
                                 <p class="category-text">Издание Limited Edition это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -199,7 +539,49 @@
                     
                             <a class="link container-hero__aside--box" href="">
                                 <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-7.jpg" width="370" height="294" alt="фото этикетка">
+                                    <picture>
+                                    
+                                        <source media="(min-width: 1200px)" 
+                                        srcset="./img/img/works/works-8-desktop.webp,
+                                              ./img/img/works/works-8-desktop@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 1200px)"
+                                         srcset="./img/img/works/works-8-desktop.jpg,
+                                              ./img/img/works/works-8-desktop@2x.jpg">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-8-tablet.webp,
+                                           ./img/img/works/works-8-tablet@2x.webp "
+                                         type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-8-tablet.jpg,
+                                              ./img/img/works/works-8-tablet@2x.jpg ">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-8.webp,
+                                             ./img/img/works/works-8@2x.webp" 
+                                        type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-8.jpg,
+                                             ./img/img/works/works-8@2x.jpg  ">
+                                        <img class=""
+                                         src="#"
+                                          alt="фото этикетка"
+                                           loading="lazy">
+                                    
+                                    </picture>
+                                
                                 <p class="category-text">Проект LAB это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -216,7 +598,49 @@
                     
                             <a class="link container-hero__aside--box" href="">
                                 <div class="flex-elements-categori">
-                                <img class="" src="./img/page-2/img-8.jpg" width="370" height="294" alt="фото работают за ноутбуком">
+                                    <picture>
+                                    
+                                        <source media="(min-width: 1200px)"
+                                        srcset="./img/img/works/works-9-desktop.webp,
+                                             ./img/img/works/works-9-desktop@2x.webp "
+                                    type="image/webp">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 1200px)" 
+                                        srcset="./img/img/works/works-9-desktop.jpg,
+                                              ./img/img/works/works-9-desktop@2x.jpg">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 768px)" 
+                                        srcset="./img/img/works/works-9-tablet.webp,
+                                             ./img/img/works/works-9-tablet@2x.webp " 
+                                    type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 768px)"
+                                         srcset="./img/img/works/works-9-tablet.jpg,
+                                            ./img/img/works/works-9-tablet@2x.jpg ">
+                                    
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-9.webp,
+                                               ./img/img/works/works-9@2x.webp" 
+                                        type="image/webp">
+                                    
+                                    
+                                        <source media="(min-width: 270px)" 
+                                        srcset="./img/img/works/works-9.jpg,
+                                           ./img/img/works/works-9@2x.jpg  ">
+                                        <img class=""
+                                         src="#"
+                                          alt="фото работают за ноутбуком" 
+                                        loading="lazy">
+                                    
+                                    </picture>
+                                
                                 <p class="category-text">Growing Business это современная площадка распространения коронавируса. Компании
                                     используют эту
                                     платформу для цифрового
@@ -231,12 +655,12 @@
                 </li>
             </ul>
         </div>
-        </section> -->
+        </section> 
     </main>
     <!------------------------------------------Блок 3 конт-я информ.---------------------------------->
 <footer class="address " id="address">
-    <!-- <div class="container footer-info">
-        <div class="">
+    <div class="container footer-info">
+        <div class="footer-container">
             <a class="link body-logo-footer addres-logo" href="" lang="en"><span>Web</span><span
                     class="second-body-logo">Studio</span></a>
 
@@ -250,13 +674,13 @@
                     </li>
                     <li class="footer"><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11 </a></li>
                 </ul>
-       
-        </address>
+
+            </address>
         </div>
 
-        <div class="footer-info-icon footer-blok">
+        <div class="footer-info-icon ">
             <h2 class="footer-icon">присоединяйтесь</h2>
-            <ul class="list item-us">
+            <ul class="list  footer-blok">
                 <li class="icon-list">
                     <a href="" class="list footer-s-l-link footer-last">
                         <svg class="icon-info-footer" width="20px" height="20px">
@@ -308,11 +732,13 @@
             </form>
 
         </div>
-    </div> -->
+    </div>
 
 
 </footer>
 
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
