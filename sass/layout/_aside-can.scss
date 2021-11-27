@@ -21,8 +21,16 @@
 }
 
 .item-us {
-  display: flex;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.item-us__icon {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item-can {

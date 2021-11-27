@@ -1,16 +1,36 @@
 .our-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   letter-spacing: 0.03em;
   text-align: center;
   background-color: var(--header-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.our-clients__us {
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .frame {
-  width: 170px;
   height: 92px;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    flex-basis: calc(100% / 2 * 30px);
+    margin: 15px;
+  }
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    width: calc(100%-2 * 30px) / 2;
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 .frame-clients {

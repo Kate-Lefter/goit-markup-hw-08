@@ -1,20 +1,30 @@
 .aside-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   letter-spacing: 0.03em;
   text-align: center;
   background-color: var(--third-accent-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .item {
-  width: 270px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--primary-text-color);
+  margin-bottom: 30px;
 
-  &:not(:last-child) {
-  margin-right: 30px;
-}
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    width: calc(100% / 2 * 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .item-substrate {
   background-color: var(--header-color);
@@ -36,7 +46,6 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-
 
 .content-team {
   font-weight: 400;
