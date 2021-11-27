@@ -3,28 +3,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
   background-color: var(--header-color);
-
-  @media screen and (min-width: 480px) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .burger-btn {
   display: block;
@@ -166,11 +156,15 @@
 }
 .header-container__menu {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: block;
     margin-top: 21px;
     margin-left: auto;
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
   }
 }
 .header-container__connection {
@@ -179,12 +173,18 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .menu-list__map:not(:last-child) {
   margin-right: 50px;
 }
-// =======================================================================
+
 .menu-list__source {
   display: block;
   padding-top: 35px;
@@ -220,7 +220,7 @@
 }
 
 .menu-list__сonnection {
-  @include font(500, 14px, 1.14);
+  @include font(500, 12px, 1.17);
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   display: flex;
@@ -231,8 +231,8 @@
   &:focus {
     color: var(--accent-color);
   }
-  @media screen and (min-width: 768px) {
-    @include font(500, 12px, 1.17);
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.14);
   }
 }
 .menu-list__badge {
