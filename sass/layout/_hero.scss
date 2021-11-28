@@ -14,7 +14,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 480px;
+  max-width: 768px;
   height: 400px;
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -31,7 +31,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../img/img/hero/hero-tablet.jpg");
-    max-width: 768px;
+    max-width: 1200px;
     height: 400px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -46,7 +46,7 @@
     padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+        rgba(46, 51, 105, 0.4)
       ),
       url("../img/img/hero/hero-desktop.jpg");
     max-width: 1600px;
