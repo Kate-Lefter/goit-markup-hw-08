@@ -19,12 +19,14 @@
 .frame {
   height: 92px;
   @media screen and (max-width: 479px) {
-    width: 260px;
-    margin: 15px;
+    width: 210px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
   }
   @media screen and (min-width: 480px) {
     width: 210px;
-    width: calc(100% / 2 * 30px);
+    width: calc(100% / 2 * 30px) / 2;
     margin: 15px;
   }
 
