@@ -9,6 +9,7 @@
 }
 
 .footer-info {
+  min-width: 320px;
   align-items: baseline;
   @media screen and (max-width: 767px) {
     flex-direction: column;
