@@ -777,6 +777,12 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__sites {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu-list__source {
     display: none;
