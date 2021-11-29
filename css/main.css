@@ -72,19 +72,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -582,7 +582,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .form-footer-position {
     width: 320;
   }
@@ -1307,7 +1307,7 @@ img {
   height: 92px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .frame {
     width: 260px;
     margin: 15px;
